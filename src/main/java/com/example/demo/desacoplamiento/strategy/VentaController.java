@@ -40,6 +40,12 @@ public class VentaController {
         throw new com.example.demo.desacoplamiento.exceptions.OperacionNoPermitidaException("No tienes rol de Administrador para borrar ventas.");
     }
 
+    // ENDPOINT PARA PROBAR EL INTERCEPTOR DE AUTENTICACIÓN
+    @GetMapping("/seguro")
+    public String endpointSeguro() {
+        return "¡Felicidades! Tienes el Header de Auth correcto y pasaste el Interceptor.";
+    }
+
     // MANEJO LOCAL DE EXCEPCIONES:
     // Este método solo atrapará IllegalArgumentException si se lanza
     // DENTRO de este controlador (o los servicios que él llama).
