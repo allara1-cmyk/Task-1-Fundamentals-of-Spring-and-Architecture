@@ -45,4 +45,4 @@ Actúan como filtros bidireccionales ("aduanas") en Spring MVC. Se configuraron 
   - **Auditoría/Métricas**: Calcular e imprimir el tiempo total de ejecución.
 
 ---
-*Informe generado para el estudio y preparación de exámenes sobre Arquitectura y Patrones en Spring Boot.*
+
