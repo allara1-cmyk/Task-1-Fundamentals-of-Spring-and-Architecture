@@ -18,7 +18,8 @@ public class PedidoControllerIoC {
     @GetMapping("/api/pedido-desacoplado")
     public String crearPedidoDesacoplado() {
         Pedido p = new Pedido();
-        pedidoService.guardar(p);
-        return "Pedido guardado exitosamente usando Inyección de Dependencias (IoC). Revisa la consola.";
+        pedidoService.guardarEnMysql(p);
+        pedidoService.guardarEnMongo(p);
+        return "Pedido guardado exitosamente en MySQL y MongoDB usando Inyección de Dependencias (@Qualifier). Revisa la consola.";
     }
 }
